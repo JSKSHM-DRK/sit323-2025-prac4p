@@ -18,9 +18,9 @@ This project is a simple calculator microservice built using Node.js and Express
 
 ### Ensure you have the following installed before running the project:
 
--Node.js: Download here
+- Node.js: Download here
 
--Git: Download here
+- Git: Download here
 
 ## Setup and Installation
 
@@ -78,9 +78,6 @@ All operations are performed via GET requests with query parameters num1 and num
 
 - Open a Pull Request
 
-## License
-
-This project is licensed under the MIT License.
 
 ## Author: **Saksham**
 
