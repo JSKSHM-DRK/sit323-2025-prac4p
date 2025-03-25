@@ -28,16 +28,16 @@ Follow these steps to set up and run the microservice:
 
 1. Clone the Repository
 
-git clone https://github.com/username/sit323-2025-prac4p.git
-cd sit323-2025-prac4p
+- git clone https://github.com/username/sit323-2025-prac4p.git
+- cd sit323-2025-prac4p
 
 2. Install Dependencies
 
-npm install
+- npm install
 
 3. Run the Microservice
 
-node server.js
+- node server.js
 
 The service will be available at: http://localhost:3000
 
@@ -56,15 +56,15 @@ All operations are performed via GET requests with query parameters num1 and num
 
 - Invalid Input: If num1 or num2 are missing or non-numeric, the service returns:
 
-{ "error": "Invalid input. Please provide two numbers." }
+    { "error": "Invalid input. Please provide two numbers." }
 
 - Division by Zero: If num2 is 0 in a division request, the service returns:
 
-{ "error": "Division by zero is not allowed." }
+    { "error": "Division by zero is not allowed." }
 
 - Unsupported Routes: If an unknown endpoint is accessed, the service returns:
 
-{ "error": "Endpoint not found" }
+    { "error": "Endpoint not found" }
 
 ## Contributing
 
