@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a simple calculator microservice built using Node.js and Express. The service provides basic arithmetic operations through RESTful API endpoints.
+### This project is a simple calculator microservice built using Node.js and Express. The service provides basic arithmetic operations through RESTful API endpoints.
 
 ## Features
 
@@ -24,7 +24,7 @@ This project is a simple calculator microservice built using Node.js and Express
 
 ## Setup and Installation
 
-Follow these steps to set up and run the microservice:
+### Follow these steps to set up and run the microservice:
 
 1. Clone the Repository
 
@@ -39,7 +39,7 @@ Follow these steps to set up and run the microservice:
 
 - node server.js
 
-The service will be available at: http://localhost:3000
+### The service will be available at: http://localhost:3000
 
 ## API Endpoints
 
@@ -81,5 +81,5 @@ All operations are performed via GET requests with query parameters num1 and num
 
 ## Author: **Saksham**
 
-GitHub: https://github.com/JSKSHM-DRK
+### GitHub: https://github.com/JSKSHM-DRK
 
