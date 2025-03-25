@@ -1,28 +1,28 @@
-**Calculator Microservice**
+# **Calculator Microservice**
 
-Overview
+## Overview
 
 This project is a simple calculator microservice built using Node.js and Express. The service provides basic arithmetic operations through RESTful API endpoints.
 
-Features
+## Features
 
-Supports addition, subtraction, multiplication, and division
+- Supports addition, subtraction, multiplication, and division
 
-Handles errors gracefully (e.g., invalid inputs, division by zero)
+- Handles errors gracefully (e.g., invalid inputs, division by zero)
 
-Provides meaningful error messages
+- Provides meaningful error messages
 
-Lightweight and easy to deploy
+- Lightweight and easy to deploy
 
-Prerequisites
+## Prerequisites
 
-Ensure you have the following installed before running the project:
+### Ensure you have the following installed before running the project:
 
-Node.js: Download here
+-Node.js: Download here
 
-Git: Download here
+-Git: Download here
 
-Setup and Installation
+## Setup and Installation
 
 Follow these steps to set up and run the microservice:
 
@@ -41,92 +41,48 @@ node server.js
 
 The service will be available at: http://localhost:3000
 
-API Endpoints
+## API Endpoints
 
 All operations are performed via GET requests with query parameters num1 and num2.
+| Endpoint | Description | Example |
+|----------|------------|---------|
+| `/add` | Adds two numbers | `/add?num1=5&num2=3` |
+| `/subtract` | Subtracts two numbers | `/subtract?num1=10&num2=4` |
+| `/multiply` | Multiplies two numbers | `/multiply?num1=6&num2=7` |
+| `/divide` | Divides two numbers | `/divide?num1=20&num2=5` |
 
-Endpoint
 
-Description
+## Error Handling
 
-Example Usage
-
-/add
-
-Adds num1 and num2
-
-/add?num1=5&num2=3
-
-/subtract
-
-Subtracts num2 from num1
-
-/subtract?num1=10&num2=4
-
-/multiply
-
-Multiplies num1 and num2
-
-/multiply?num1=6&num2=7
-
-/divide
-
-Divides num1 by num2
-
-/divide?num1=20&num2=5
-
-Error Handling
-
-Invalid Input: If num1 or num2 are missing or non-numeric, the service returns:
+- Invalid Input: If num1 or num2 are missing or non-numeric, the service returns:
 
 { "error": "Invalid input. Please provide two numbers." }
 
-Division by Zero: If num2 is 0 in a division request, the service returns:
+- Division by Zero: If num2 is 0 in a division request, the service returns:
 
 { "error": "Division by zero is not allowed." }
 
-Unsupported Routes: If an unknown endpoint is accessed, the service returns:
+- Unsupported Routes: If an unknown endpoint is accessed, the service returns:
 
 { "error": "Endpoint not found" }
 
-Deployment
+## Contributing
 
-You can deploy this microservice using a cloud platform such as Heroku, AWS, or Docker.
+- Fork the repository
 
-Example Docker Deployment
+- Create a new branch (git checkout -b feature-branch)
 
-Create a Dockerfile:
+- Commit your changes (git commit -m "Added a new feature")
 
-FROM node:18
-WORKDIR /app
-COPY package*.json ./
-RUN npm install
-COPY . .
-CMD ["node", "server.js"]
-EXPOSE 3000
+- Push to the branch (git push origin feature-branch)
 
-Build and run the container:
+- Open a Pull Request
 
-docker build -t calculator-microservice .
-docker run -p 3000:3000 calculator-microservice
-
-Contributing
-
-Fork the repository
-
-Create a new branch (git checkout -b feature-branch)
-
-Commit your changes (git commit -m "Added a new feature")
-
-Push to the branch (git push origin feature-branch)
-
-Open a Pull Request
-
-License
+## License
 
 This project is licensed under the MIT License.
 
-Author: Your Name
+## Author: **Saksham**
 
-GitHub: Your GitHub Profile
+GitHub: https://github.com/JSKSHM-DRK
 
